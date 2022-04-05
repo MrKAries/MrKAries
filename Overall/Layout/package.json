@@ -1,0 +1,27 @@
+{
+  "name": "karies-layout",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.1.8",
+    "qiankun": "^2.7.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@iconify-json/bi": "^1.1.1",
+    "@iconify-json/codicon": "^1.1.4",
+    "@vitejs/plugin-vue": "^2.3.0",
+    "less": "^4.1.2",
+    "typescript": "^4.5.4",
+    "unplugin-icons": "^0.14.1",
+    "unplugin-vue-components": "^0.18.5",
+    "vite": "^2.9.0",
+    "vue-tsc": "^0.29.8"
+  }
+}

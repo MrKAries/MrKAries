@@ -1,0 +1,24 @@
+# Build
+node_modules
+dist
+dist-ssr
+lib
+es
+
+# Logs
+logs 
+*.log
+
+# Editor directories and file
+.DS_Store
+.idea
+.vscode/*
+*.local
+*.iml
+*.ntvs*
+*.njsproj
+*.suo
+*.sln
+*.sw?
+*.swp
+*.swo
