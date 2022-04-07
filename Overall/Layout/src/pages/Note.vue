@@ -5,7 +5,17 @@
 <script lang="ts" setup>
   import { onMounted } from 'vue'
 
-  import { start } from 'qiankun'
+  // qiankun
+  import { registerMicroApps, start } from 'qiankun'
+
+  registerMicroApps([
+    {
+      name: 'karies-note',
+      entry: '//localhost:7521/note',
+      container: '#qiankunContainer',
+      activeRule: '/note',
+    },
+  ])
 
   onMounted(() => {
     if (!(window as any).qiankunStarted) {
@@ -14,5 +24,3 @@
     }
   })
 </script>
-
-<style scoped></style>
