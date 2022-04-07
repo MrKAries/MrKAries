@@ -29,9 +29,4 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
-  server: {
-    host: true,
-    port: 7520,
-    open: true,
-  },
 })
