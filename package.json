@@ -5,12 +5,15 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "all:install": "pnpm install && npm-run-all --serial install:*",
+    "bootstrap": "pnpm install && npm-run-all --serial install:*",
     "install:layout": "cd Overall/Layout && pnpm install",
     "install:note": "cd Overall/Note && pnpm install",
-    "all:start": "npm-run-all --parallel start:*",
+    "start": "npm-run-all --parallel start:*",
     "start:layout": "cd Overall/Layout && pnpm dev",
-    "start:note": "cd Overall/Note && pnpm dev"
+    "start:note": "cd Overall/Note && pnpm dev",
+    "build": "npm-run-all --parallel build:*",
+    "build:layout": "cd Overall/Layout && pnpm build && pnpm preview",
+    "build:note": "cd Overall/Note && pnpm build && pnpm preview"
   },
   "keywords": [
     "MicroApp",
